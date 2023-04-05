@@ -21,7 +21,7 @@ def main():
     request = requests.get(url)
     request.encoding = 'utf-8'
 
-    # use beautiful soup to create the soup using the lxml.html parser
+    # use beautiful soup to create the soup using the html.parser
     soup = bs4.BeautifulSoup(request.text, "html.parser")
 
     print("\n")
@@ -57,10 +57,10 @@ def main():
         class_list.append(temp_class)
 
 
-    # create a new list where we will append the findalls
+    
     print("\n")
 
-
+    # create a new list where we will append the findalls   
     parsed_soups = []
     # if no classes are provided by the user
     if len(class_list) < 1:
